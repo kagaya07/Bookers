@@ -29,7 +29,7 @@
 
 
 
-h1, h2, th, h3, span, h4, p {
+h1, h2, th, h3, span, h4, p, ul, .error {
 	font-family: verdana, arial, helvetica, sans-serif;
 }
 
@@ -99,9 +99,38 @@ h4, .button-edit, .button-back, .solid{
 	float: left;
 }
 
+.flash {
+	color: green;
+}
 
+.error {
+	border: 2px solid red;
+	width: 450px;
+	margin-bottom: 15px;
+	background-color: #f0f0f0;
+}
 
+.error-count {
+	padding: 5px 6px;
+	background-color: #c00;
+	color: #fff;
+	font-size: 12px;
+}
 
+ul {
+	font-size: 12px;
+	margin: 33px;
+}
 
+.field_with_errors {
+	background-color: red;
+	margin: 2px;
+}
+
+.text_fielld {
+	width: 160px;
+	height:  40px;
+	margin: 2px;
+}
 
 
