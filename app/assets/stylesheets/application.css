@@ -29,7 +29,7 @@
 
 
 
-h1, h2, th, h3, span, h4, p, ul, .error {
+h1, h2, th, h3, span, h4, p, ul, .error, label {
 	font-family: verdana, arial, helvetica, sans-serif;
 }
 
@@ -78,7 +78,7 @@ h3 {
 	margin: 33px;
 }
 
-.text-box,.edit-button {
+.field, .edit-button, .button {
 	margin-bottom: 10px;
 }
 
@@ -95,6 +95,7 @@ h4, .button-edit, .button-back, .solid{
 
 .show-button, .edit-solid, .back-button {
 	padding-right: 5px;
+	font-size: 14px;
 	display: inline-block;
 	float: left;
 }
@@ -123,14 +124,15 @@ ul {
 }
 
 .field_with_errors {
-	background-color: red;
-	margin: 2px;
+	padding: 2px;
+    background-color: red;
+    display: table;
 }
 
-.text_fielld {
-	width: 160px;
-	height:  40px;
-	margin: 2px;
+label {
+    line-height: 18px;
+	font-size: 13px;
+	display: block;
 }
 
 

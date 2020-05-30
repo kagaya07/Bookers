@@ -31,7 +31,7 @@
 
 
 	<h3>New book</h3>
-	
+
 	<% if @book.errors.any? %>
 	<div class="error">
 		<p class="error-count"><%= @book.errors.count %>errors prohibited this book from being saved: </p>
@@ -47,12 +47,12 @@
 
 	<%=form_for(@book) do |f| %>
 		<div class="field">
-			<p>title</p>
-			<div class="text_fielld"><%= f.text_field :title %></div>
+			<%= f.label :title, "title" %>
+			<%= f.text_field :title %>
 		</div>
 		<div class="field">
-			<p>body</p>
-			<div class="text_fielld"><%= f.text_area :body %></div>
+			<%= f.label :body, "body" %>
+			<%= f.text_area :body %>
 		</div>
 		<div class="button"><%= f.submit "Create Book"%></div>
 	<% end %>
