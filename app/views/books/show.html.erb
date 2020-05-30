@@ -1,11 +1,20 @@
-<% if flash[:notice] %>
-	<p class="flash"><%= flash[:notice] %></p>
-<% end %>
+<div class="box">
+	<% if flash[:notice] %>
+		<p class="flash"><%= flash[:notice] %></p>
+	<% end %>
 
-<h6>Title:</h6>
-<p><%= @book.title %></p>
-<h6>Body:</h6>
-<p><%= @book.body %></p>
+	<div class="show clearfix">
+		<h4>Title:</h4>
+		<p class="show-text"><%= @book.title %></p>
+	</div>
+	<div class="show clearfix">
+		<h4>Body:</h4>
+		<p class="show-text"><%= @book.body %></p>
+    </div>
 
-<%= link_to "Edit", edit_book_path %>
-<%= link_to "Back", books_path %>
+
+	<div class="button-edit"></button><%= link_to "Edit", edit_book_path %></div>
+	<div class="solid">|</div>
+	<div class="button-back"><%= link_to "Back", books_path %></div>
+
+</div>
